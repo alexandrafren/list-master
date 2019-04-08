@@ -15,6 +15,12 @@ class ProjectInput extends Component {
           name: ''
       })
     }
+    
+    handleChange = event => {
+        this.setState({
+            name: event.target.value
+        })
+    }
 
     render() {
         return(
