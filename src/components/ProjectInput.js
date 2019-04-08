@@ -7,6 +7,14 @@ class ProjectInput extends Component {
             name: ''
         }
     }
+    
+    handleSubmit = event => {
+      event.preventDefault();
+      this.props.addTodo(this.state)
+      this.setState({
+          name: ''
+      })
+    }
 
     render() {
         return(
