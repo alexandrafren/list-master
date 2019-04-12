@@ -1,24 +1,16 @@
-export default function managTodos(state = {
-  todos: []
+export default function manageTodos(state = {
+  bands: []
 }, action) {
   switch (action.type) {
-    case 'ADD_TODOS':
-      return {
-        state
+    case 'ADD_BAND':
+      const band = {
+        id: Math.random() * 100000000000000000000,
+        name: action.payload.name
       }
-    case 'REMOVE_TODOS':
-      return {
-        state
-      }
-    case 'EDIT_TODOS':
-      return {
-        state
-      }
-    case 'ARCHIVE_TODOS':
-      return {
-        state
-      }
+      return {bands: state.bands.concat(band)}
+    case 'DELETE_BAND':
+       return state;
     default:
-        return state;
+      return state;
   }
 };

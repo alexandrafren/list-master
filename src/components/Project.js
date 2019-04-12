@@ -2,7 +2,7 @@ import React from 'react'
 
 const Project = props => {
   return (
-    <li>{props.name}</li>
+    <li>{props.name}Project Container</li>
   );
 };
 
