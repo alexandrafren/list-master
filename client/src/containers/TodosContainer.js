@@ -19,7 +19,7 @@ class TodosContainer extends Component {
       return results.json();
     }).then(data => {
       let todos = data.map((todo) => {
-        return(todo.name)
+        return(<li>{todo.name}</li>)
       })
       this.setState({todos: todos})
       console.log(this.state.todos)
@@ -29,8 +29,9 @@ class TodosContainer extends Component {
   render() {
     return(
       <div>
-        <TodoInput addTodo={this.props.addTodo} />
+        Todos:
         {this.state.todos}
+        <TodoInput addTodo={this.props.addTodo} />
       </div>
     )
   }
