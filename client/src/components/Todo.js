@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 const Todo = props => {
   return(
-  <li>{props.name}props hur</li>
+  <li>{props.name}</li>
   );
 };
 

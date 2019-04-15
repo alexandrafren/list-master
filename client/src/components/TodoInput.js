@@ -11,8 +11,6 @@ class TodoInput extends Component {
         }
     }
 
-    //renderProjects = () => this.props.projects.map((project) => <div><input type="radio" value="{project.id}" onChange={this.handleChanged}/><label>{project.name}</label><br /></div>)
-    
     handleSubmit = event => {
       event.preventDefault();
       this.props.addTodo(this.state)
@@ -38,6 +36,12 @@ class TodoInput extends Component {
     handleChangec = event => {
         this.setState({
             level_of_difficulty: event.target.value
+        })
+    }
+
+    handleChanged = event => {
+        this.setState({
+            project_id: event.target.value
         })
     }
 

@@ -10,16 +10,31 @@ class ProjectsContainer extends Component {
   //filter todos, then map
  // renderProjects = () => this.props.todos.map((todo, i) => <Todo key={i} name={todo.name} />)
 
+  constructor() {
+    super();
+    this.state = {
+      todos: [],
+      projects: []
+    }
+  }
  componentDidMount(){
-  return fetch('api/todo')
+  fetch('api/todo')
   .then(results => {
     return results.json();
   }).then(data => {
     let todos = data.map((todo) => {
-      return(<li>{todo.name}</li>)
+      return todo
     })
     this.setState({todos: todos})
-    console.log(this.state.todos)
+  })
+   fetch('api/project')
+  .then(results =>{
+    return results.json();
+  }).then(data => {
+    let projects = data.map((project) => {
+      return project
+    })
+    this.setState({projects: projects})
   })
 }
 

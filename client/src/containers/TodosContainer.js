@@ -34,12 +34,16 @@ class TodosContainer extends Component {
       this.setState({projects: projects})
     })
   }
+
+  filterTodos = () => {
+    return this.state.todos.filter(Boolean)
+  }
   
   render() {
     return(
       <div className="column">
         Todos:
-        {this.state.todos}
+        <Todo todos={this.filterTodos()} />
         <br />
         <br />
         <TodoInput addTodo={this.props.addTodo} projects={this.state.projects}/>
