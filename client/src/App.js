@@ -7,14 +7,12 @@ import SuggestionContainer from './containers/SuggestionContainer'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className="App" class="row">
           <TodosContainer />
           <br/>
           <ProjectsContainer />
           <br/>
           <SuggestionContainer />
-        </header>
       </div>
     );
   }

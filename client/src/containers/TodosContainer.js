@@ -28,9 +28,11 @@ class TodosContainer extends Component {
   
   render() {
     return(
-      <div>
+      <div class="column">
         Todos:
         {this.state.todos}
+        <br />
+        <br />
         <TodoInput addTodo={this.props.addTodo} />
       </div>
     )

@@ -11,7 +11,7 @@ class SuggestionContainer extends Component {
 
   render() {
     return(
-      <div>
+      <div class="column">
         Looking for a Suggested Task?
         <SuggestionInput />
       </div>

@@ -26,9 +26,38 @@ class TodoInput extends Component {
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
-                <label>Add Todo</label>
+                <label>Add a New Todo</label>
+                    <br />
                     <input type="text" onChange={this.handleChange} value={this.state.name}/>
-                    <input type="submit" />
+                    <br />
+                    <label>How long will this task take to complete?</label>
+                    <br />
+                    <input type="radio" value="a few minutes" name="time to complete" onChange={this.handleChangeb}/>
+                    <label>A Few Minutes</label>
+                    <br />
+                    <input type="radio" value="an hour or less" name="time to complete" onChange={this.handleChangeb}/>
+                    <label>An Hour or Less</label>
+                    <br />
+                    <input type="radio" value="a few hours" name="time to complete" onChange={this.handleChangeb}/>
+                    <label>A Few Hours</label>
+                    <br />
+                    <input type="radio" value="all day" name="time to complete" onChange={this.handleChangeb}/>
+                    <label>All Day</label>
+                    <br />
+                    <input type="radio" value="several days" name="time to complete" onChange={this.handleChangeb}/>
+                    <label>Several Days</label>
+                    <br />
+                    <label>How much are you dreading doing this?</label>
+                    <br />
+                    <input type="radio" value="not at all" name="level of difficulty" onChange={this.handleChangec}/>
+                    <label>Not at all!</label>
+                    <br />
+                    <input type="radio" value="a little bit" name="level of difficulty" onChange={this.handleChangec}/>
+                    <label>Some</label>
+                    <br />
+                    <input type="radio" value="a lot" name="level of difficulty" onChange={this.handleChangec}/>
+                    <label>Quite a bit </label>
+                    <br />
                 </form>
             </div>
         )
