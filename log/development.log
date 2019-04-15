@@ -2365,3 +2365,73 @@ Processing by ProjectsController#index as */*
 Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 4.7ms)
 
 
+Started GET "/api/todo" for 127.0.0.1 at 2019-04-15 09:24:41 -0700
+Started GET "/api/project" for 127.0.0.1 at 2019-04-15 09:24:41 -0700
+Started GET "/api/todo" for 127.0.0.1 at 2019-04-15 09:24:41 -0700
+Processing by TodosController#index as */*
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Processing by TodosController#index as */*
+  ↳ app/controllers/projects_controller.rb:4
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/project" for 127.0.0.1 at 2019-04-15 09:24:41 -0700
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (1.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/todo" for 127.0.0.1 at 2019-04-15 12:04:47 -0700
+Started GET "/api/todo" for 127.0.0.1 at 2019-04-15 12:04:47 -0700
+Processing by TodosController#index as */*
+Started GET "/api/project" for 127.0.0.1 at 2019-04-15 12:04:48 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+
+
+Processing by ProjectsController#index as */*
+Completed 200 OK in 46ms (Views: 46.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:4
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/todo" for 127.0.0.1 at 2019-04-15 12:04:52 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/project" for 127.0.0.1 at 2019-04-15 12:04:53 -0700
+Processing by ProjectsController#index as */*
+Started GET "/api/todo" for 127.0.0.1 at 2019-04-15 12:04:53 -0700
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+
+
+  ↳ app/controllers/projects_controller.rb:4
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.1ms)
+
+

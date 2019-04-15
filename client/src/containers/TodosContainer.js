@@ -2,64 +2,54 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import TodoInput from '../components/TodoInput'
 import Todo from '../components/Todo'
+import { bindActionCreators } from 'redux';
+import { fetchTodos } from '../actions/todoActions'
 
 class TodosContainer extends Component {
 
-  //renderTodos = () => this.props.todos.map((todo, i) => <Todo key={i} name={todo.name} />)
-  constructor() {
-    super();
-    this.state = {
-      todos: [],
-      projects: []
-    }
-  }
-
   componentDidMount(){
-    fetch('api/todo')
-    .then(results => {
-      return results.json();
-    }).then(data => {
-      let todos = data.map((todo) => {
-        return(<li>{todo.name}</li>)
-      })
-      this.setState({todos: todos})
-    })
-    return fetch('api/project')
-    .then(results =>{
-      return results.json();
-    }).then(data => {
-      let projects = data.map((project) => {
-        return (<div><input type="radio" value="{project.id}" onChange={this.handleChanged}/><label>{project.name}</label><br /></div>)
-      })
-      this.setState({projects: projects})
-    })
+    this.props.fetchTodos();
+    //return fetch('api/project')
+    //.then(results =>{
+      //return results.json();
+    //}).then(data => {
+      //let projects = data.map((project) => {
+        //return (<div><input type="radio" value="{project.id}" onChange={this.handleChanged}/><label>{project.name}</label><br /></div>)
+      //})
+      //this.setState({projects: projects})
+    //})
+    //projects={this.state.projects} intodo input
   }
 
   filterTodos = () => {
-    return this.state.todos.filter(Boolean)
+    //return this.state.todos.filter(Boolean)
+    return this.props.todos.map((todo) => <li>{todo.name}</li>)
   }
   
   render() {
     return(
       <div className="column">
         Todos:
-        <Todo todos={this.filterTodos()} />
+        {this.filterTodos()}
         <br />
         <br />
-        <TodoInput addTodo={this.props.addTodo} projects={this.state.projects}/>
+        <TodoInput addTodo={this.props.addTodo} />
       </div>
     )
   }
 }
 
-//const mapStateToProps = state => {
-  //return {
-    //todos: state.todos
-  //}
-//}
+const mapStateToProps = (state) => {
+  return {
+    todos: state.todos
+  }
+}
 
-//const mapDispatchToProps = (dispatch) => ({addTodo: todo => dispatch({type: 'ADD_TODO', todo}) })
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({
+    fetchTodos: fetchTodos,
+  }, dispatch);
+}
 
-///xport default connect(mapStateToProps, mapDispatchToProps)(TodosContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(TodosContainer);
 
-export default TodosContainer;
