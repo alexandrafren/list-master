@@ -9,12 +9,13 @@ class TodosContainer extends Component {
   constructor() {
     super();
     this.state = {
-      todos: []
+      todos: [],
+      projects: []
     }
   }
 
   componentDidMount(){
-    return fetch('api/todo')
+    fetch('api/todo')
     .then(results => {
       return results.json();
     }).then(data => {
@@ -22,18 +23,26 @@ class TodosContainer extends Component {
         return(<li>{todo.name}</li>)
       })
       this.setState({todos: todos})
-      console.log(this.state.todos)
+    })
+    return fetch('api/project')
+    .then(results =>{
+      return results.json();
+    }).then(data => {
+      let projects = data.map((project) => {
+        return (<div><input type="radio" value="{project.id}" onChange={this.handleChanged}/><label>{project.name}</label><br /></div>)
+      })
+      this.setState({projects: projects})
     })
   }
   
   render() {
     return(
-      <div class="column">
+      <div className="column">
         Todos:
         {this.state.todos}
         <br />
         <br />
-        <TodoInput addTodo={this.props.addTodo} />
+        <TodoInput addTodo={this.props.addTodo} projects={this.state.projects}/>
       </div>
     )
   }

@@ -10,6 +10,8 @@ class TodoInput extends Component {
             project_id: null
         }
     }
+
+    //renderProjects = () => this.props.projects.map((project) => <div><input type="radio" value="{project.id}" onChange={this.handleChanged}/><label>{project.name}</label><br /></div>)
     
     handleSubmit = event => {
       event.preventDefault();
@@ -75,11 +77,14 @@ class TodoInput extends Component {
                     <input type="radio" value="a lot" name="level of difficulty" onChange={this.handleChangec}/>
                     <label>Quite a bit </label>
                     <br />
+                    <label>Would you like to add this todo to a project?</label>
+                    {this.props.projects}
                     <input type="submit" value="Add New Todo"/>
                 </form>
             </div>
         )
     }
 }
+
 
 export default TodoInput;
