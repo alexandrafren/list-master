@@ -4,7 +4,9 @@ class TodoInput extends Component {
     constructor(){
         super();
         this.state = {
-            name: ''
+            name: '',
+            time_to_complete: '',
+            level_of_difficulty: ''
         }
     }
     
@@ -12,13 +14,27 @@ class TodoInput extends Component {
       event.preventDefault();
       this.props.addTodo(this.state)
       this.setState({
-          name: ''
+          name: '',
+          time_to_complete: '',
+          level_of_difficulty: ''
       })
     }
     
     handleChange = event => {
         this.setState({
             name: event.target.value
+        })
+    }
+
+    handleChangeb = event => {
+        this.setState({
+            time_to_complete: event.target.value
+        })
+    }
+
+    handleChangec = event => {
+        this.setState({
+            level_of_difficulty: event.target.value
         })
     }
 
@@ -58,6 +74,7 @@ class TodoInput extends Component {
                     <input type="radio" value="a lot" name="level of difficulty" onChange={this.handleChangec}/>
                     <label>Quite a bit </label>
                     <br />
+                    <input type="submit" value="Add New Todo"/>
                 </form>
             </div>
         )
