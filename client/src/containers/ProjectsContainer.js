@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import ProjectInput from '../components/ProjectInput'
 import Project from '../components/Project'
-import Todo from '../components/Todo'
 
 
 class ProjectsContainer extends Component {
@@ -28,7 +27,7 @@ class ProjectsContainer extends Component {
   render() {
     return(
       <div class="column">
-        Create a Project
+        //List Projects and their corresponding to-dos//
         <ProjectInput addProject={this.props.addProject} />
       </div>
     )

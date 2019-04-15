@@ -27,13 +27,37 @@ class SuggestionInput extends Component {
   render() {
     return(
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>How are you feeling?</label>
-            <input type="text" onChange={this.handleChange} value={this.state.feeling}/>
-          <label>How much time do you have?</label>
-            <input type="text" onChange={this.handleChange} value={this.state.time}/>
-            <input type="submit" />
-          </form>
+          <form onSubmit={this.handleSubmit}>
+                    <label>How much time do you have?</label>
+                    <br />
+                    <input type="radio" value="a few minutes" name="time to complete" onChange={this.handleChangeb}/>
+                    <label>A Few Minutes</label>
+                    <br />
+                    <input type="radio" value="an hour or less" name="time to complete" onChange={this.handleChangeb}/>
+                    <label>An Hour or Less</label>
+                    <br />
+                    <input type="radio" value="a few hours" name="time to complete" onChange={this.handleChangeb}/>
+                    <label>A Few Hours</label>
+                    <br />
+                    <input type="radio" value="all day" name="time to complete" onChange={this.handleChangeb}/>
+                    <label>All Day</label>
+                    <br />
+                    <input type="radio" value="several days" name="time to complete" onChange={this.handleChangeb}/>
+                    <label>Several Days</label>
+                    <br />
+                    <label>How are you feeling?</label>
+                    <br />
+                    <input type="radio" value="not at all" name="level of difficulty" onChange={this.handleChangec}/>
+                    <label>Cool as a cucumber</label>
+                    <br />
+                    <input type="radio" value="a little bit" name="level of difficulty" onChange={this.handleChangec}/>
+                    <label>I've been better, I've been worse</label>
+                    <br />
+                    <input type="radio" value="a lot" name="level of difficulty" onChange={this.handleChangec}/>
+                    <label>Exhausted/Stressed/Generally Filled with Ennui</label>
+                    <br />
+                    <input type="submit" value="Tell me what to do!"/>
+                </form>
       </div>
     )
   }

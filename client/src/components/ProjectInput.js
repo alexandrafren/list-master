@@ -26,9 +26,12 @@ class ProjectInput extends Component {
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
-                <label>Add Todo</label>
+                <label>Create A New Project</label>
+                <br />
+                    After creating a project, you can add todos to it to keep your tasks more organized.
                     <input type="text" onChange={this.handleChange} value={this.state.name}/>
-                    <input type="submit" />
+                    <br />
+                    <input type="submit" value="Submit"/>
                 </form>
             </div>
         )
