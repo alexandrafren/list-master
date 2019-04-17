@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-p1 = Project.create(name: "Graduate from Flatiron")
-t1 = Todo.create(name: "Finish final project for Flatiron!", project_id: 1, time_to_complete: 15, level_of_difficulty: 3)
+p1 = Project.create(name: "null")
+p2 = Project.create(name: "Graduate from Flatiron")
+todos = Todo.create(name: "Finish final project for Flatiron!", project_id: 2, time_to_complete: "several days", level_of_difficulty: "a lot" )
+todo2 = Todo.create(name: "Apply for Passport", project_id: 1, time_to_complete: "an hour or less", level_of_difficulty: "a little bit")
+
 

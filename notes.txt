@@ -1,0 +1,6 @@
+-Create Thunk/axios?? actions to post new todos and projects to the api and to fetch projects
+-Update state when thunk updates the api with redux
+-filter todos so that only non project affiliated todos are shown in the todos column
+-filter todos so that only project affiliated todos are shown in the todos column
+-create logic so that suggestion renders a random todo that matches user inputs
+-ability to check todos off when they have been completed
