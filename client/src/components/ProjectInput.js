@@ -25,7 +25,7 @@ class ProjectInput extends Component {
     render() {
         return(
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} id="projectData">
                 <label>Create A New Project</label>
                 <br />
                     After creating a project, you can add todos to it to keep your tasks more organized.

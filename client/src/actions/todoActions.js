@@ -18,5 +18,20 @@ export function fetchProjects() {
   };
 }
 
+export function postTodo() {
+  return fetch('api/todo', {
+    method: 'POST',
+    body: JSON.stringify()
+  }).then((res) => res.json())
+  .then((data) => console.log(data))
+}
+
+export function postProject() {
+  return fetch('api/project', {
+    method: 'POST',
+    body: JSON.stringify()
+  }).then((res) => res.json())
+  .then((data) => console.log(data))
+}
 
 
