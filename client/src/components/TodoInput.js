@@ -5,17 +5,18 @@ class TodoInput extends Component {
         super();
         this.state = {
             name: '',
+            project_id: 1,
             time_to_complete: '',
-            level_of_difficulty: '',
-            project_id: null
+            level_of_difficulty: ''
         }
     }
 
     handleSubmit = event => {
       event.preventDefault();
-      this.props.addTodo(this.state)
+      this.props.postTodo(this.state);
       this.setState({
           name: '',
+          project_id: 1,
           time_to_complete: '',
           level_of_difficulty: ''
       })

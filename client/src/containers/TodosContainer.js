@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import TodoInput from '../components/TodoInput'
 import Todo from '../components/Todo'
 import { bindActionCreators } from 'redux';
-import { fetchTodos } from '../actions/todoActions'
+import { fetchTodos, postTodo } from '../actions/todoActions'
 
 class TodosContainer extends Component {
 
@@ -33,7 +33,7 @@ class TodosContainer extends Component {
         {this.filterTodos()}
         <br />
         <br />
-        <TodoInput addTodo={this.props.addTodo} />
+        <TodoInput postTodo={this.props.postTodo} />
       </div>
     )
   }
@@ -48,8 +48,11 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     fetchTodos: fetchTodos,
+    postTodo: postTodo
   }, dispatch);
 }
+
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodosContainer);
 

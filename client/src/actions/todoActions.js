@@ -18,12 +18,19 @@ export function fetchProjects() {
   };
 }
 
-export function postTodo() {
-  return fetch('api/todo', {
-    method: 'POST',
-    body: JSON.stringify()
-  }).then((res) => res.json())
-  .then((data) => console.log(data))
+export function postTodo(todoinput) {
+  return (dispatch) => {
+    dispatch({type: 'ADDING_TODO' });
+    console.log(JSON.stringify(todoinput))
+    fetch('api/todo', {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(todoinput)
+    }).then(response => response.json())
+      .then(data => console.log(data))
+  }
 }
 
 export function postProject() {

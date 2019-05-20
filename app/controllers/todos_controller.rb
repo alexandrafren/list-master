@@ -3,4 +3,15 @@ class TodosController < ApplicationController
 		@todos = Todo.all
 		render json: @todos
 	end
+
+	def create
+		@todo = Todo.create(todo_params)
+		render json: @todo
+	end
+
+
+	def todo_params
+		params.require(:todo).permit(:name, :project_id, :time_to_complete, :level_of_difficulty)
+	end
+
 end
