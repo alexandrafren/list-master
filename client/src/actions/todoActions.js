@@ -22,14 +22,14 @@ export function postTodo(todoinput) {
   return (dispatch) => {
     dispatch({type: 'ADDING_TODO' });
     console.log(JSON.stringify(todoinput))
-    fetch('api/todo', {
+    return fetch('api/todo', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(todoinput)
     }).then(response => response.json())
-      .then(data => console.log(data))
+      .then(data => dispatch({type: 'ADD_TODO', payload: data}));
   }
 }
 
