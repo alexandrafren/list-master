@@ -11,7 +11,7 @@ class TodosController < ApplicationController
 
 
 	def todo_params
-		params.require(:todo).permit(:name, :project_id, :time_to_complete, :level_of_difficulty)
+		params.require(:todo).permit(:name, :time_to_complete, :level_of_difficulty)
 	end
 
 end

@@ -8,20 +8,9 @@ export function fetchTodos() {
     };
   }
 
-//fetch projects
-export function fetchProjects() {
-  return (dispatch) => {
-    dispatch({type: 'LOADING_PROJECTS' });
-    return fetch('api/project')
-      .then(response => response.json())
-      .then(projects => dispatch({ type: 'ADD_PROJECT', payload: projects}));
-  };
-}
-
 export function postTodo(todoinput) {
   return (dispatch) => {
     dispatch({type: 'ADDING_TODO' });
-    console.log(JSON.stringify(todoinput))
     return fetch('api/todo', {
       method: 'POST',
       headers: {
@@ -33,12 +22,5 @@ export function postTodo(todoinput) {
   }
 }
 
-export function postProject() {
-  return fetch('api/project', {
-    method: 'POST',
-    body: JSON.stringify()
-  }).then((res) => res.json())
-  .then((data) => console.log(data))
-}
 
 

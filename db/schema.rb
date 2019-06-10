@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2) do
 
   create_table "todos", force: :cascade do |t|
     t.string "name"
-    t.integer "project_id"
     t.string "time_to_complete"
     t.string "level_of_difficulty"
   end

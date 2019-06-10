@@ -5,7 +5,6 @@ class TodoInput extends Component {
         super();
         this.state = {
             name: '',
-            project_id: 1,
             time_to_complete: '',
             level_of_difficulty: ''
         }
@@ -16,7 +15,6 @@ class TodoInput extends Component {
       this.props.postTodo(this.state);
       this.setState({
           name: '',
-          project_id: 1,
           time_to_complete: '',
           level_of_difficulty: ''
       })
@@ -82,8 +80,6 @@ class TodoInput extends Component {
                     <input type="radio" value="a lot" name="level of difficulty" onChange={this.handleChangec}/>
                     <label>Quite a bit </label>
                     <br />
-                    <label>Would you like to add this todo to a project?</label>
-                    {this.props.projects}
                     <input type="submit" value="Add New Todo"/>
                 </form>
             </div>

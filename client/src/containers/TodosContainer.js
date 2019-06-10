@@ -9,16 +9,6 @@ class TodosContainer extends Component {
 
   componentDidMount(){
     this.props.fetchTodos();
-    //return fetch('api/project')
-    //.then(results =>{
-      //return results.json();
-    //}).then(data => {
-      //let projects = data.map((project) => {
-        //return (<div><input type="radio" value="{project.id}" onChange={this.handleChanged}/><label>{project.name}</label><br /></div>)
-      //})
-      //this.setState({projects: projects})
-    //})
-    //projects={this.state.projects} intodo input
   }
 
   filterTodos = () => {

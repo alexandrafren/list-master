@@ -3,7 +3,7 @@ export default function manageTodos(state = { todos: [], projects: [] }, action)
     case 'ADD_TODOS':
       return { todos: action.payload };
     case 'ADD_TODO':
-      return { todos: state.todos.concat(action.payload) }
+      return { todos: state.todos.concat(action.payload) };
     default:
       return state;
   }

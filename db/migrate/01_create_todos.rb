@@ -2,7 +2,6 @@ class CreateTodos < ActiveRecord::Migration[5.2]
     def change
         create_table :todos do |t|
             t.string :name
-            t.integer :project_id
             t.string :time_to_complete
             t.string :level_of_difficulty
         end
