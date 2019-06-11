@@ -5572,3 +5572,17 @@ Processing by TodosController#index as */*
 Completed 200 OK in 93ms (Views: 59.9ms | ActiveRecord: 22.5ms)
 
 
+Started GET "/api/todo" for 127.0.0.1 at 2019-06-10 21:55:18 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/todo" for 127.0.0.1 at 2019-06-10 22:01:56 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (10.8ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 24ms (Views: 13.2ms | ActiveRecord: 10.8ms)
+
+
