@@ -10,16 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2) do
-
-  create_table "projects", force: :cascade do |t|
-    t.string "name"
-  end
+ActiveRecord::Schema.define(version: 1) do
 
   create_table "todos", force: :cascade do |t|
     t.string "name"
     t.string "time_to_complete"
     t.string "level_of_difficulty"
+    t.boolean "completed"
   end
 
 end

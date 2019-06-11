@@ -22,5 +22,19 @@ export function postTodo(todoinput) {
   }
 }
 
+export function updateTodo(todoupdate) {
+  return (dispatch) => {
+    dispatch({type: 'UPDATING_TODO'});
+    return fetch('api/todo', {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(todoupdate)
+    }).then(response => response.json())
+      .then(data => dispatch({type: 'UPDATE_TODO', payload: data}));
+  }
+}
+
 
 
