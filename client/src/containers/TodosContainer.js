@@ -13,11 +13,12 @@ class TodosContainer extends Component {
 
   filterTodos = () => {
     //return this.state.todos.filter(Boolean)
-    return this.props.todos.map((todo) => <li><input type="checkbox" onChange={this.handleChange} />{todo.name}</li>)
+    return this.props.todos.map((todo) => <Todo props={todo} />)
   }
 
   handleChange = () => {
     //set state so that completed is true
+    //call updateTodo, pass the todo id
   }
   
   render() {

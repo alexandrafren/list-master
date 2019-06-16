@@ -22,7 +22,7 @@ export function postTodo(todoinput) {
   }
 }
 
-export function updateTodo(todoupdate) {
+export function updateTodo(todoId) {
   return (dispatch) => {
     dispatch({type: 'UPDATING_TODO'});
     return fetch('api/todo', {
@@ -30,7 +30,7 @@ export function updateTodo(todoupdate) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(todoupdate)
+      body: JSON.stringify(todoId)
     }).then(response => response.json())
       .then(data => dispatch({type: 'UPDATE_TODO', payload: data}));
   }
