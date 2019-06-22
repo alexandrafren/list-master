@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   scope '/api' do
-    get :todo, to: 'todos#index'
-    post :todo, to: 'todos#create'
+    resources :todos, only: [:show, :index, :create]
 end
 end

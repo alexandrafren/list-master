@@ -6,7 +6,8 @@ class TodoInput extends Component {
         this.state = {
             name: '',
             time_to_complete: '',
-            level_of_difficulty: ''
+            level_of_difficulty: '',
+            completed: false
         }
     }
 

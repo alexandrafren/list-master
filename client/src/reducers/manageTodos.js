@@ -5,8 +5,17 @@ export default function manageTodos(state = { todos: [], projects: [] }, action)
     case 'ADD_TODO':
       return { todos: state.todos.concat(action.payload) };
     case 'UPDATE_TODO':
-      return state;
+      return state.map((item, index) => {
+        if (item.id === action.payload.id) {
+          return {
+            ...item,
+            completed: true
+          }
+        }
+        return item;
+      })
     default:
       return state;
   }
 };
+
