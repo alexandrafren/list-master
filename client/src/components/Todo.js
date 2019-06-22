@@ -4,6 +4,7 @@ class Todo extends Component {
   constructor(){
     super();
     this.state = {
+      id: '',
       name: '',
       time_to_complete: '',
       level_of_difficulty: '',
@@ -14,6 +15,7 @@ class Todo extends Component {
 
   componentDidMount(){
       this.setState({
+        id: this.props.props.id,
         name: this.props.props.name,
         time_to_complete: this.props.props.time_to_complete,
         level_of_difficulty: this.props.props.level_of_difficulty

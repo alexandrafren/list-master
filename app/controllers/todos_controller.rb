@@ -14,9 +14,14 @@ class TodosController < ApplicationController
 		render json: @todo
 	end
 
+	def update
+		@todo = Todo.find(params[:id])
+		@todo.update(todo_params)
+		render json: @todo
+	end
 
 	def todo_params
-		params.require(:todo).permit(:name, :time_to_complete, :level_of_difficulty)
+		params.require(:todo).permit(:name, :time_to_complete, :level_of_difficulty, :completed)
 	end
 
 end

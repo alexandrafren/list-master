@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   scope '/api' do
-    resources :todos, only: [:show, :index, :create]
+    resources :todos, only: [:show, :index, :create, :update]
 end
 end

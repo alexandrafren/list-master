@@ -2,7 +2,7 @@
 export function fetchTodos() {
     return (dispatch) => {
       dispatch({ type: 'LOADING_TODOS' });
-      return fetch('api/todo')
+      return fetch('api/todos')
         .then(response => response.json())
         .then(todos => dispatch({ type: 'ADD_TODOS', payload: todos }));
     };
@@ -11,7 +11,7 @@ export function fetchTodos() {
 export function postTodo(todoinput) {
   return (dispatch) => {
     dispatch({type: 'ADDING_TODO' });
-    return fetch('api/todo', {
+    return fetch('api/todos', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
@@ -23,10 +23,11 @@ export function postTodo(todoinput) {
 }
 
 export function updateTodo(todoInput) {
-  console.log(JSON.stringify(todoInput))
+  let url = 'api/todos/' + todoInput.id
+  delete todoInput.id
   return (dispatch) => {
     dispatch({type: 'UPDATING_TODO'});
-    return fetch('api/todo', {
+    return fetch(url, {
       method: 'PATCH',
       headers: {
         "Content-Type": "application/json",
