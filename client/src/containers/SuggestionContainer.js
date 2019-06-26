@@ -9,6 +9,13 @@ class SuggestionContainer extends Component {
 
   //render the suggestion, initial should be to add a todo
 
+  suggestionLogic = (suggestionState) => {
+    this.props.fetchTodos();
+    let suggestionTodos = this.props.todos;
+    suggestionTodos = suggestionTodos.filter((todo) todo.time_to_complete === suggestionState.time)
+    suggestionTodos.filter((todo) => todo.level_of_difficulty === suggestionState.feeling)
+  }
+
   render() {
     return(
       <div class="column">
@@ -17,6 +24,18 @@ class SuggestionContainer extends Component {
       </div>
     )
   }
+}
+
+const mapStateToProps = (state) => {
+  return {
+    todos: state.todos
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({
+    fetchTodos: fetchTodos
+  }, dispatch);
 }
 
 export default SuggestionContainer;

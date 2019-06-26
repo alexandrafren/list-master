@@ -4,3 +4,21 @@
 -filter todos so that only project affiliated todos are shown in the todos column
 -create logic so that suggestion renders a random todo that matches user inputs
 -ability to check todos off when they have been completed
+
+
+how to get suggestion working:
+
+pull all todos - Container
+
+take user input of how much time they have and the level of stress they can handle - Input ( hold in a state)
+
+filter all todos by time and by stress level - Container 
+
+if none, tell user that they don't have any todos that fit those parameters and suggest they add more todos - Suggestion 
+
+if some, show the first on the list, if they want another suggestion, show two, etc, until there is none left in the list - Suggestion 
+
+
+<SuggestionContainer />
+<Suggestion />
+<SuggestionInput /> 

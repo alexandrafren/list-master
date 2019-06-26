@@ -18,9 +18,15 @@ class SuggestionInput extends Component {
     })
   }
 
-  handleChange = event => {
+  handleChangeb = event => {
     this.setState({
-      name: event.target.value
+      time: event.target.value
+    })
+  }
+
+  handleChangec = event => {
+    this.setState({
+      feeling: event.target.value
     })
   }
 
