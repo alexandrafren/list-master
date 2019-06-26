@@ -20,6 +20,13 @@ class TodosController < ApplicationController
 		render json: @todo
 	end
 
+	def destroy
+		@todo = Todo.find(params[:id])
+		@todos = Todo.all
+		@todo.destroy
+		render json: @todos
+	end
+
 	def todo_params
 		params.require(:todo).permit(:name, :time_to_complete, :level_of_difficulty, :completed)
 	end

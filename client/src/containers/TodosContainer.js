@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import TodoInput from '../components/TodoInput'
 import Todo from '../components/Todo'
 import { bindActionCreators } from 'redux';
-import { fetchTodos, postTodo, updateTodo } from '../actions/todoActions'
+import { fetchTodos, postTodo, updateTodo, deleteTodo} from '../actions/todoActions'
 
 class TodosContainer extends Component {
 
@@ -12,11 +12,7 @@ class TodosContainer extends Component {
   }
 
   filterTodos = () => {
-    let todos = this.props.todos.filter(function (todo) {
-      return todo.completed === false;
-    });
-    todos = this.props.todos.map((todo) => <Todo props={todo} updateTodo={this.props.updateTodo} />)
-    return todos
+    return this.props.todos.map((todo) => <Todo props={todo} updateTodo={this.props.updateTodo} deleteTodo={this.props.deleteTodo} />)
   }
   
   render() {
@@ -42,7 +38,8 @@ const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     fetchTodos: fetchTodos,
     postTodo: postTodo,
-    updateTodo: updateTodo
+    updateTodo: updateTodo,
+    deleteTodo: deleteTodo
   }, dispatch);
 }
 

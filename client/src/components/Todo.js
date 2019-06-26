@@ -32,7 +32,7 @@ class Todo extends Component {
     let statepop = this.state;
     delete statepop.style;
     statepop.completed = true;
-    this.props.updateTodo(statepop)
+    this.props.deleteTodo(statepop)
   }
 
   render() {

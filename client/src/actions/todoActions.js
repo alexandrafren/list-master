@@ -38,5 +38,20 @@ export function updateTodo(todoInput) {
   }
 }
 
+export function deleteTodo(todoInput){
+  let url = 'api/todos/' + todoInput.id
+  return (dispatch) => {
+    dispatch({type: 'DELETING_TODO'});
+    return fetch(url, {
+      method: 'DELETE', 
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(todoInput)
+    }).then(response => response.json())
+      .then(data => dispatch({type: 'DELETE_TODO', payload: data}))
+  }
+}
+
 
 
