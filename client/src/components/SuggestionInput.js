@@ -11,7 +11,7 @@ class SuggestionInput extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    //run logic that will return a suggestion
+    this.props.suggestionLogic(this.state)
     this.setState({
       time:'',
       feeling: ''

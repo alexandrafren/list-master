@@ -11088,3 +11088,92 @@ Processing by TodosController#index as */*
 Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 09:55:16 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (36.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 743ms (Views: 573.9ms | ActiveRecord: 36.1ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 09:55:32 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (2.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 211ms (Views: 201.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 09:55:41 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 113ms (Views: 74.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 09:55:46 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (4.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 37ms (Views: 28.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 09:57:41 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 09:59:37 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 59ms (Views: 58.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 10:00:12 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 27ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 10:05:13 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/todos" for 127.0.0.1 at 2019-06-28 10:05:27 -0700
+Processing by TodosController#create as */*
+  Parameters: {"name"=>"test", "time_to_complete"=>"a few minutes", "level_of_difficulty"=>"not at all", "completed"=>false, "todo"=>{"name"=>"test", "time_to_complete"=>"a few minutes", "level_of_difficulty"=>"not at all", "completed"=>false}}
+  [1m[35m (4.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:13
+  [1m[36mTodo Create (3.4ms)[0m  [1m[32mINSERT INTO "todos" ("name", "time_to_complete", "level_of_difficulty", "completed") VALUES (?, ?, ?, ?)[0m  [["name", "test"], ["time_to_complete", "a few minutes"], ["level_of_difficulty", "not at all"], ["completed", 0]]
+  ↳ app/controllers/todos_controller.rb:13
+  [1m[35m (24.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:13
+Completed 200 OK in 155ms (Views: 0.6ms | ActiveRecord: 31.9ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 10:07:38 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (4.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 10:08:57 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (3.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-28 10:09:01 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
