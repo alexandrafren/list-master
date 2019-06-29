@@ -4,6 +4,7 @@ import TodoInput from '../components/TodoInput'
 import Todo from '../components/Todo'
 import { bindActionCreators } from 'redux';
 import { fetchTodos, postTodo, updateTodo, deleteTodo} from '../actions/todoActions'
+import './Todo.css'
 
 class TodosContainer extends Component {
 
@@ -17,7 +18,7 @@ class TodosContainer extends Component {
   
   render() {
     return(
-      <div className="column">
+      <div class="column" className="todo">
         Todos:
         {this.filterTodos()}
         <br />

@@ -4,6 +4,7 @@ import SuggestionInput from '../components/SuggestionInput'
 import Todo from '../components/Todo'
 import { bindActionCreators } from 'redux';
 import { fetchTodos, deleteTodo} from '../actions/todoActions'
+import './Suggestion.css';
 
 class SuggestionContainer extends Component {
 
@@ -53,7 +54,7 @@ class SuggestionContainer extends Component {
 
   render() {
     return(
-      <div class="column">
+      <div class="column" className="suggestion">
         Looking for a Suggested Task?
         <SuggestionInput suggestionLogic={this.suggestionLogic}/>
         <br />
