@@ -11,7 +11,9 @@ class SuggestionContainer extends Component {
     super();
     this.state = {
       index: 0,
-      suggestedTodo: "You haven't entered any parameters for a Suggestion, or your suggestion didn't match any entered todos"
+      suggestedTodo: "You haven't entered any parameters for a Suggestion, or your suggestion didn't match any entered todos",
+      suggestionFeeling: "",
+      suggestionTime: ""
     }
   }
 
@@ -23,10 +25,31 @@ class SuggestionContainer extends Component {
     let suggestionTodos = this.props.todos;
     suggestionTodos = suggestionTodos.filter((todo) => todo.time_to_complete === suggestionState.time)
     suggestionTodos.filter((todo) => todo.level_of_difficulty === suggestionState.feeling)
+    console.log(suggestionTodos)
+    console.log( typeof suggestionTodos[this.state.index])
+    if (suggestionTodos.length < this.state.index) {
+      this.setState({
+        suggestedTodo: "There are no more Suggested Todos that fit your parameters. Try entering new parameters or adding todos"
+      })
+    }
+    else {
+    let updateIndex = this.state.index + 1
     this.setState({
-      suggestedTodo: <Todo props={suggestionTodos[this.state.index]} deleteTodo={this.props.deleteTodo} />
+      suggestedTodo: <><Todo props={suggestionTodos[this.state.index]} deleteTodo={this.props.deleteTodo} /><button onClick={this.pushButton}>Want a different suggestion?</button></>,
+      suggestionFeeling: suggestionState.feeling,
+      suggestionTime: suggestionState.time,
+      index: updateIndex
     })
   }
+}
+
+  pushButton = (event) => {
+    event.preventDefault()
+    let sugparams = this.state
+    console.log(sugparams)
+    this.suggestionLogic(sugparams)
+  }
+
 
   render() {
     return(
