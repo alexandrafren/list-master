@@ -32,8 +32,10 @@ class SuggestionInput extends Component {
 
   render() {
     return(
-      <div>
+      <div clasName="suggestion">
           <form onSubmit={this.handleSubmit}>
+              <div className="one">
+                <br />
                     <label>How much time do you have?</label>
                     <br />
                     <input type="radio" value="a few minutes" name="time to complete" onChange={this.handleChangeb}/>
@@ -51,6 +53,9 @@ class SuggestionInput extends Component {
                     <input type="radio" value="several days" name="time to complete" onChange={this.handleChangeb}/>
                     <label>Several Days</label>
                     <br />
+                  </div>
+                  <div className="two">
+                    <br />
                     <label>How are you feeling?</label>
                     <br />
                     <input type="radio" value="not at all" name="level of difficulty" onChange={this.handleChangec}/>
@@ -62,7 +67,9 @@ class SuggestionInput extends Component {
                     <input type="radio" value="a lot" name="level of difficulty" onChange={this.handleChangec}/>
                     <label>Exhausted/Stressed/Generally Filled with Ennui</label>
                     <br />
+                    <br />
                     <input type="submit" value="Tell me what to do!"/>
+                </div>
                 </form>
       </div>
     )

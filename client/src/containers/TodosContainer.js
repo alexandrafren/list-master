@@ -18,12 +18,16 @@ class TodosContainer extends Component {
   
   render() {
     return(
-      <div class="column" className="todo">
-        Todos:
-        {this.filterTodos()}
-        <br />
-        <br />
-        <TodoInput postTodo={this.props.postTodo} />
+      <div className="todo">
+        <div class="column">
+          <div class="header">
+            Todos:
+          </div>
+            {this.filterTodos()}
+        </div>
+        <div class="column">
+            <TodoInput postTodo={this.props.postTodo} /> 
+        </div> 
       </div>
     )
   }

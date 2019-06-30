@@ -6,6 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  background-image: url('smoke.jpg');
 }
 
 code {
@@ -19,4 +21,12 @@ code {
 
 .column {
   flex: 50%;
+}
+
+.header {
+  font-size: 30px;
+}
+
+li {
+  list-style: none;
 }

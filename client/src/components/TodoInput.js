@@ -49,7 +49,8 @@ class TodoInput extends Component {
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
-                <label>Add a New Todo</label>
+                <div class="column">
+                    <label class="header">Add a New Todo</label>
                     <br />
                     <input type="text" onChange={this.handleChange} value={this.state.name}/>
                     <br />
@@ -70,6 +71,8 @@ class TodoInput extends Component {
                     <input type="radio" value="several days" name="time to complete" onChange={this.handleChangeb}/>
                     <label>Several Days</label>
                     <br />
+                </div>
+                <div class="column">
                     <label>How much are you dreading doing this?</label>
                     <br />
                     <input type="radio" value="not at all" name="level of difficulty" onChange={this.handleChangec}/>
@@ -82,6 +85,7 @@ class TodoInput extends Component {
                     <label>Quite a bit </label>
                     <br />
                     <input type="submit" value="Add New Todo"/>
+                </div>
                 </form>
             </div>
         )

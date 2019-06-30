@@ -1,3 +1,17 @@
+
 .suggestion {
-    background-color: #bdd5fc;
+    width: 100%;
+    height: 300px;
+    margin: 30px;
+    padding: 10px;
+    background-color: lavender;
+    border: 1px solid black;
+}
+.one {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.two {
+    margin-left: 15%;
 }

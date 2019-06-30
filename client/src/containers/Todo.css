@@ -1,3 +1,13 @@
+
 .todo {
-    background-color: #fbffbd;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin: 30px;
+    text-align: left;
+    display: flex;
+    background-color: lavender;
+    border: 1px solid black;
 }
+
+

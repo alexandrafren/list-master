@@ -12,7 +12,7 @@ class SuggestionContainer extends Component {
     super();
     this.state = {
       index: 0,
-      suggestedTodo: "You haven't entered any parameters for a Suggestion, or your suggestion didn't match any entered todos",
+      suggestedTodo: "You haven't entered any parameters for a suggestion!",
       suggestionFeeling: "",
       suggestionTime: ""
     }
@@ -55,12 +55,20 @@ class SuggestionContainer extends Component {
   render() {
     return(
       <div class="column" className="suggestion">
-        Looking for a Suggested Task?
-        <SuggestionInput suggestionLogic={this.suggestionLogic}/>
-        <br />
-        Your Suggestion: 
-        <br />
-        {this.state.suggestedTodo}
+        <div className="one">
+          <div class="header">
+            Looking for a Suggested Task?
+          </div>
+          <SuggestionInput suggestionLogic={this.suggestionLogic}/>
+          <br />
+        </div>
+        <div className="two">
+          <div class="header">
+            Your Suggestion: 
+          </div>
+          <br />
+          {this.state.suggestedTodo}
+        </div>
       </div>
     )
   }
