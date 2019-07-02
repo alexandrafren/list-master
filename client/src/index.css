@@ -15,6 +15,13 @@ code {
     monospace;
 }
 
+.head {
+  color: lavender;
+  text-align: center;
+  width: 80%;
+  margin-left: 370px;
+}
+
 .row {
   display: flex;
 }
