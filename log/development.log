@@ -16427,3 +16427,255 @@ Processing by TodosController#index as */*
 Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-30 10:43:27 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (30.9ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 160ms (Views: 129.3ms | ActiveRecord: 30.9ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-06-30 10:44:40 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (4.8ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 91ms (Views: 86.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 12:59:15 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (19.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 467ms (Views: 405.3ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:00:53 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (3.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 85ms (Views: 79.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:01:28 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.9ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 60ms (Views: 54.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:01:50 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (3.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 83ms (Views: 78.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:02:03 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:02:51 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:04:54 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:06:56 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:07:43 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (10.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 24ms (Views: 12.9ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:09:51 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:11:23 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.9ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 13:12:30 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:39:26 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (23.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 780ms (Views: 617.1ms | ActiveRecord: 23.6ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:39:41 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 150ms (Views: 131.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:43:14 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (26.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 321ms (Views: 278.7ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:43:39 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (27.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 195ms (Views: 156.1ms | ActiveRecord: 27.5ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:43:59 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (9.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 151ms (Views: 137.5ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:44:29 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (2.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 151ms (Views: 143.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:44:33 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:44:37 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 50ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:44:41 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 81ms (Views: 64.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:44:42 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (12.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 91ms (Views: 72.0ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 16:45:15 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 17:02:00 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (72.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 932ms (Views: 707.4ms | ActiveRecord: 72.5ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 17:02:13 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (5.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 96ms (Views: 84.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 17:02:34 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (8.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 236ms (Views: 220.7ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 17:02:51 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (13.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 167ms (Views: 139.1ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 17:05:43 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (30.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 144ms (Views: 111.2ms | ActiveRecord: 30.3ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 17:09:22 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (416.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 2855ms (Views: 2217.1ms | ActiveRecord: 416.7ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 17:28:51 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (76.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 1388ms (Views: 1085.4ms | ActiveRecord: 76.7ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 21:55:10 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (4.8ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 56ms (Views: 51.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 21:56:56 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 21:57:02 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-01 21:57:50 -0700
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (9.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 116ms (Views: 95.4ms | ActiveRecord: 9.0ms)
+
+

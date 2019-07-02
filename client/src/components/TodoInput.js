@@ -50,7 +50,7 @@ class TodoInput extends Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                 <div class="column">
-                    <label class="header">Add a New Todo</label>
+                    <label>Add a New Todo</label>
                     <br />
                     <input type="text" onChange={this.handleChange} value={this.state.name}/>
                     <br />

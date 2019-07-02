@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import SuggestionInput from '../components/SuggestionInput'
+import Factoid from '../components/Factoid'
 import Todo from '../components/Todo'
 import { bindActionCreators } from 'redux';
 import { fetchTodos, deleteTodo} from '../actions/todoActions'
-import './Suggestion.css';
 
 class SuggestionContainer extends Component {
 
@@ -47,29 +47,29 @@ class SuggestionContainer extends Component {
   pushButton = (event) => {
     event.preventDefault()
     let sugparams = this.state
-    console.log(sugparams)
     this.suggestionLogic(sugparams)
   }
 
 
   render() {
     return(
-      <div class="column" className="suggestion">
-        <div className="one">
+    <>
+      <div className="suggestion">
           <div class="header">
             Looking for a Suggested Task?
           </div>
           <SuggestionInput suggestionLogic={this.suggestionLogic}/>
           <br />
-        </div>
-        <div className="two">
           <div class="header">
             Your Suggestion: 
           </div>
           <br />
           {this.state.suggestedTodo}
-        </div>
+          <br />
+          <br />
+          <Factoid />
       </div>
+    </>
     )
   }
 }

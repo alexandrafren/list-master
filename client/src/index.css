@@ -24,9 +24,42 @@ code {
 }
 
 .header {
-  font-size: 30px;
+  font-size: 22px;
 }
 
 li {
   list-style: none;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  background-color: lavender;
+  text-align: left;
+  border: 1px solid white;
+}
+
+.suggestion {
+    width: 80%;
+    height: 300px;
+    margin-left: 60px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    left: 300px;
+}
+.one {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.two {
+    margin-left: 15%;
 }
