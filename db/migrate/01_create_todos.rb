@@ -4,7 +4,7 @@ class CreateTodos < ActiveRecord::Migration[5.2]
             t.string :name
             t.string :time_to_complete
             t.string :level_of_difficulty
- 	    t.boolean :completed
+ 	        t.boolean :completed
         end
     end
 end

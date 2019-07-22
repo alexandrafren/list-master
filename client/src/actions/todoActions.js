@@ -1,7 +1,6 @@
 //fetch todos
 export function fetchTodos() {
     return (dispatch) => {
-      dispatch({ type: 'LOADING_TODOS' });
       return fetch('api/todos')
         .then(response => response.json())
         .then(todos => dispatch({ type: 'ADD_TODOS', payload: todos }));
@@ -9,8 +8,8 @@ export function fetchTodos() {
   }
 
 export function postTodo(todoinput) {
+  console.log('C');
   return (dispatch) => {
-    dispatch({type: 'ADDING_TODO' });
     return fetch('api/todos', {
       method: 'POST',
       headers: {
@@ -18,7 +17,7 @@ export function postTodo(todoinput) {
       },
       body: JSON.stringify(todoinput)
     }).then(response => response.json())
-      .then(data => dispatch({type: 'ADD_TODO', payload: data}));
+      .then(data => {dispatch({type: 'ADD_TODO', payload: data})});
   }
 }
 
@@ -26,7 +25,6 @@ export function updateTodo(todoInput) {
   let url = 'api/todos/' + todoInput.id
   delete todoInput.id
   return (dispatch) => {
-    dispatch({type: 'UPDATING_TODO'});
     return fetch(url, {
       method: 'PATCH',
       headers: {
@@ -41,7 +39,6 @@ export function updateTodo(todoInput) {
 export function deleteTodo(todoInput){
   let url = 'api/todos/' + todoInput.id
   return (dispatch) => {
-    dispatch({type: 'DELETING_TODO'});
     return fetch(url, {
       method: 'DELETE', 
       headers: {

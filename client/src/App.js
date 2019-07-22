@@ -3,6 +3,7 @@ import './App.css';
 import TodosContainer from './containers/TodosContainer'
 import SuggestionContainer from './containers/SuggestionContainer'
 import Header from './components/Header'
+import CommentContainer from './containers/CommentContainer'
 
 class App extends Component {
   render() {
@@ -12,11 +13,14 @@ class App extends Component {
           <Header />
         </div>
         <div>
-          <SuggestionContainer />
+         <SuggestionContainer />
         </div>
           <br />
         <div>
           <TodosContainer />
+        </div>
+        <div>
+          <CommentContainer />
         </div>
       </div>
     );

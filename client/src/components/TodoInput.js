@@ -13,7 +13,9 @@ class TodoInput extends Component {
 
     handleSubmit = event => {
       event.preventDefault();
+      console.log('A');
       this.props.postTodo(this.state);
+      console.log('B');
       this.setState({
           name: '',
           time_to_complete: '',
