@@ -17415,3 +17415,12 @@ Processing by TodosController#index as */*
 Completed 200 OK in 145ms (Views: 113.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/api/todos" for 127.0.0.1 at 2019-07-23 21:33:59 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4
+Completed 200 OK in 45ms (Views: 29.0ms | ActiveRecord: 5.8ms)
+
+

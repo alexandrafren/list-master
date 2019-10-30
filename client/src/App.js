@@ -9,18 +9,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="head">
-          <Header />
-        </div>
-        <div>
-         <SuggestionContainer />
-        </div>
-          <br />
         <div>
           <TodosContainer />
-        </div>
-        <div>
-          <CommentContainer />
         </div>
       </div>
     );

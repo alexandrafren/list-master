@@ -11,19 +11,11 @@ class TodosContainer extends Component {
     this.props.fetchTodos();
   }
 
-  filterTodos = () => {
-    return this.props.todos.map((todo) => <Todo props={todo} updateTodo={this.props.updateTodo} deleteTodo={this.props.deleteTodo} />)
-  }
   
   render() {
     return(
         <div class="sidenav">
-          <div class="header">
-            Todos:
-          </div>
-            {this.filterTodos()}
-            <br />
-            <TodoInput postTodo={this.props.postTodo} /> 
+		{this.props.todos}
         </div> 
     )
   }
