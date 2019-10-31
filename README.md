@@ -1,5 +1,7 @@
 # README
 
+List-Master is a todo app that helps users make decisions about what item to cross off their list next.
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
