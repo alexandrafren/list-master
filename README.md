@@ -2,6 +2,13 @@
 
 List-Master is a todo app that helps users make decisions about what item to cross off their list next.
 
+This application utilizes a Rails API backend and a React front end.
+
+
+To deloy this application, run npm start.
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
